@@ -1,0 +1,41 @@
+{
+  "name": "gh-avatar",
+  "version": "0.0.0",
+  "description": "Get the avatar of a GitHub user",
+  "license": "MIT",
+  "repository": "sindresorhus/gh-avatar",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "github",
+    "gh",
+    "user",
+    "username",
+    "info",
+    "avatar",
+    "profile",
+    "pic",
+    "picture",
+    "photo",
+    "image",
+    "img"
+  ],
+  "dependencies": {
+    "gh-user": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
