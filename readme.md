@@ -13,9 +13,9 @@ $ npm install --save gh-avatar
 ## Usage
 
 ```js
-var ghAvatar = require('gh-avatar');
+const ghAvatar = require('gh-avatar');
 
-ghAvatar('sindresorhus', function (err, avatar) {
+ghAvatar('sindresorhus').then(avatar => {
 	console.log(avatar);
 	//=> 'https://avatars.githubusercontent.com/u/170270?v=3'
 });
@@ -26,9 +26,10 @@ ghAvatar('sindresorhus', function (err, avatar) {
 
 ### ghAvatar(username, [token], callback)
 
+Returns a promise for a URL to the avatar.
+
 #### username
 
-*Required*  
 Type: `string`
 
 GitHub username.
@@ -38,8 +39,6 @@ GitHub username.
 Type: `string`  
 
 GitHub [personal access token](https://github.com/settings/tokens/new).
-
-#### callback(err, user)
 
 
 ## License
