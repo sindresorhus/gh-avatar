@@ -1,4 +1,4 @@
-# gh-avatar [![Build Status](https://travis-ci.org/sindresorhus/gh-avatar.svg?branch=master)](https://travis-ci.org/sindresorhus/gh-avatar)
+# gh-avatar
 
 > Get the avatar of a GitHub user
 
