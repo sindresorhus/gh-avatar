@@ -1,8 +1,6 @@
-'use strict';
-var ghUser = require('gh-user');
+import ghUser from 'gh-user';
 
-module.exports = function (username, token) {
-	return ghUser(username, token).then(function (data) {
-		return data.avatar_url;
-	});
-};
+export default async function ghAvatar(username, {token} = {}) {
+	const user = await ghUser(username, {token});
+	return user.avatar_url;
+}

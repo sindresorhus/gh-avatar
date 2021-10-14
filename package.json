@@ -1,42 +1,44 @@
 {
-  "name": "gh-avatar",
-  "version": "2.0.0",
-  "description": "Get the avatar of a GitHub user",
-  "license": "MIT",
-  "repository": "sindresorhus/gh-avatar",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "github",
-    "gh",
-    "user",
-    "username",
-    "info",
-    "avatar",
-    "profile",
-    "pic",
-    "picture",
-    "photo",
-    "image",
-    "img"
-  ],
-  "dependencies": {
-    "gh-user": "^2.0.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
-  }
+	"name": "gh-avatar",
+	"version": "2.0.0",
+	"description": "Get the avatar of a GitHub user",
+	"license": "MIT",
+	"repository": "sindresorhus/gh-avatar",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"type": "module",
+	"exports": "./index.js",
+	"engines": {
+		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"github",
+		"gh",
+		"user",
+		"username",
+		"info",
+		"avatar",
+		"profile",
+		"pic",
+		"picture",
+		"photo",
+		"image"
+	],
+	"dependencies": {
+		"gh-user": "^6.0.0"
+	},
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"xo": "^0.45.0"
+	}
 }

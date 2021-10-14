@@ -2,31 +2,26 @@
 
 > Get the avatar of a GitHub user
 
-
 ## Install
 
+```sh
+npm install gh-avatar
 ```
-$ npm install --save gh-avatar
-```
-
 
 ## Usage
 
 ```js
-const ghAvatar = require('gh-avatar');
+import ghAvatar from 'gh-avatar';
 
-ghAvatar('sindresorhus').then(avatar => {
-	console.log(avatar);
-	//=> 'https://avatars.githubusercontent.com/u/170270?v=3'
-});
+console.log(await ghAvatar('sindresorhus'));
+//=> 'https://avatars.githubusercontent.com/u/170270?v=3'
 ```
-
 
 ## API
 
-### ghAvatar(username, [token], callback)
+### ghAvatar(username, options?)
 
-Returns a promise for a URL to the avatar.
+Returns a `Promise<string>` with the URL to the avatar.
 
 #### username
 
@@ -34,13 +29,12 @@ Type: `string`
 
 GitHub username.
 
-#### token
+#### options
 
-Type: `string`  
+Type: `object`
+
+##### token
+
+Type: `string`
 
 GitHub [personal access token](https://github.com/settings/tokens/new).
-
-
-## License
-
-MIT © [Sindre Sorhus](http://sindresorhus.com)

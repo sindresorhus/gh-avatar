@@ -1,6 +1,6 @@
 import test from 'ava';
-import fn from './';
+import ghAvatar from './index.js';
 
-test(async t => {
-	t.true(/^https/.test(await fn('sindresorhus')));
+test('main', async t => {
+	t.regex(await ghAvatar('sindresorhus'), /^https/);
 });
