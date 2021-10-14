@@ -1,6 +1,6 @@
 {
 	"name": "gh-avatar",
-	"version": "2.0.0",
+	"version": "3.0.0",
 	"description": "Get the avatar of a GitHub user",
 	"license": "MIT",
 	"repository": "sindresorhus/gh-avatar",
